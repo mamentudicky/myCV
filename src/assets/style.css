@@ -1,0 +1,63 @@
+.app-container {
+  background-color: #e6f7ff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cv-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.cv-header {
+  background-color: #1e90ff;
+  color: #ffffff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.profile-picture img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cv-section {
+  padding: 20px 30px;
+}
+
+.section-title {
+  color: #1e90ff;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-item {
+  background-color: #1e90ff;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
