@@ -13,6 +13,49 @@
   overflow: hidden;
 }
 
+.navigation-bar {
+  background-color: #1b80e4;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navigation-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-bar li {
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.navigation-bar li:hover {
+  background-color: #005f99;
+}
+
+.navigation-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-bar a:hover {
+  color: #e6f7ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .cv-header {
   background-color: #1e90ff;
   color: #ffffff;
@@ -37,6 +80,7 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  outline: 4px solid #1b80e4;
 }
 
 .cv-section {
@@ -60,4 +104,41 @@
   color: #ffffff;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.footer {
+  background-color: #1e90ff;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 10;
+}
+
+.contact-list li {
+  margin: 0 15px;
+}
+
+.contact-icon {
+  width: 32px; /* Anda bisa menyesuaikan ukuran ikon */
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1); /* Efek zoom saat ikon di-hover */
+}
+
+.contact-list li a {
+  display: inline-block;
 }

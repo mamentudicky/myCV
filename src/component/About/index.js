@@ -1,14 +1,22 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const About = () => {
+  const [about, setAbout] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const aboutRef = ref(db, "about");
+
+    onValue(aboutRef, (snapshot) => {
+      const data = snapshot.val();
+      setAbout(data);
+    });
+  }, []);
+
   return (
-    <section className="cv-section">
-      <h2 className="section-title">Tentang Saya</h2>
-      <p>
-        Saya adalah seorang mahasiswa Informatika di Universitas Klabat. Saya
-        memiliki keahlian dalam graphic design. Dengan semangat belajar dan
-        keinginan untuk berkembang, saya berharap dapat berkontribusi secara
-        positif dalam bidang yang saya tekuni dan memperluas wawasan saya
-        melalui pengalaman baru.
-      </p>
+    <section id="about" className="cv-section">
+      <h2 className="section-title">{about.title}</h2>
+      <p>{about.subTitle}</p>
     </section>
   );
 };
