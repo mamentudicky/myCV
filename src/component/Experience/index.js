@@ -6,6 +6,7 @@ const Experience = () => {
   const [content1, setContent1] = useState({});
   const [content2, setContent2] = useState({});
   const [content3, setContent3] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const db = getDatabase();
@@ -24,27 +25,34 @@ const Experience = () => {
         if (data.content3) {
           setContent3(data.content3);
         }
+        setIsLoading(false);
       }
     });
   }, []);
 
   return (
     <section id="experience" className="cv-section">
-      <h2 className="section-title">{experience.title}</h2>
-      <ul>
-        <li>
-          <strong>{content1.title}</strong> {experience.year24}
-          <p>{content1.subTitle}</p>
-        </li>
-        <li>
-          <strong>{content2.title}</strong> {experience.year24}
-          <p>{content2.subTitle}</p>
-        </li>
-        <li>
-          <strong>{content3.title}</strong> {experience.year24}
-          <p>{content2.subTitle}</p>
-        </li>
-      </ul>
+      {isLoading ? (
+        <div className="loading-spinner blue"></div>
+      ) : (
+        <div>
+          <h2 className="section-title">{experience.title}</h2>
+          <ul>
+            <li>
+              <strong>{content1.title}</strong> {experience.year24}
+              <p>{content1.subTitle}</p>
+            </li>
+            <li>
+              <strong>{content2.title}</strong> {experience.year24}
+              <p>{content2.subTitle}</p>
+            </li>
+            <li>
+              <strong>{content3.title}</strong> {experience.year24}
+              <p>{content3.subTitle}</p>
+            </li>
+          </ul>
+        </div>
+      )}
     </section>
   );
 };

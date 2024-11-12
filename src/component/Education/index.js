@@ -6,7 +6,8 @@ const Education = () => {
   const [content1, setContent1] = useState({});
   const [content2, setContent2] = useState({});
   const [content3, setContent3] = useState({});
-  const [content4, setcontent4] = useState({});
+  const [content4, setContent4] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const db = getDatabase();
@@ -26,33 +27,40 @@ const Education = () => {
           setContent3(data.content3);
         }
         if (data.content4) {
-          setcontent4(data.content4);
+          setContent4(data.content4);
         }
+        setIsLoading(false);
       }
     });
   }, []);
 
   return (
     <section id="education" className="cv-section">
-      <h2 className="section-title">{education.title}</h2>
-      <ul>
-        <li>
-          <strong>{content1.title}</strong> {content1.year}
-          <p>{content1.subTitle}</p>
-        </li>
-        <li>
-          <strong>{content2.title}</strong> {content2.year}
-          <p>{content2.subTitle}</p>
-        </li>
-        <li>
-          <strong>{content3.title}</strong> {content3.year}
-          <p></p>
-        </li>
-        <li>
-          <strong>{content4.title}</strong> {content4.year}
-          <p></p>
-        </li>
-      </ul>
+      {isLoading ? (
+        <div className="loading-spinner blue"></div>
+      ) : (
+        <div>
+          <h2 className="section-title">{education.title}</h2>
+          <ul>
+            <li>
+              <strong>{content1.title}</strong> {content1.year}
+              <p>{content1.subTitle}</p>
+            </li>
+            <li>
+              <strong>{content2.title}</strong> {content2.year}
+              <p>{content2.subTitle}</p>
+            </li>
+            <li>
+              <strong>{content3.title}</strong> {content3.year}
+              <p>{content3.subTitle}</p>
+            </li>
+            <li>
+              <strong>{content4.title}</strong> {content4.year}
+              <p>{content4.subTitle}</p>
+            </li>
+          </ul>
+        </div>
+      )}
     </section>
   );
 };
