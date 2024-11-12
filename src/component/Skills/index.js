@@ -26,6 +26,7 @@ const Skills = () => {
       <ul className="skills-list">
         <li className="skill-item">{content.skill1}</li>
         <li className="skill-item">{content.skill2}</li>
+        <li className="skill-item">{content.skill3}</li>
       </ul>
     </section>
   );

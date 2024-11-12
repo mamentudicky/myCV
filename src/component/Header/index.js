@@ -1,6 +1,5 @@
 import { getDatabase, ref, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
-import { ProfilePicture } from "../../assets";
 
 const Header = () => {
   const [header, setHeader] = useState({});
@@ -22,7 +21,10 @@ const Header = () => {
           <p>{header.subTitle}</p>
         </div>
         <div className="profile-picture">
-          <img src={ProfilePicture} alt="Profile" />
+          <img
+            src={`data:image/jpeg;base64, ${header.profilePicture}`}
+            alt="Profile"
+          />
         </div>
       </div>
     </header>

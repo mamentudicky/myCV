@@ -1,21 +1,34 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Navigation = () => {
+  const [navigation, setNavigation] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const navigationRef = ref(db, "navigation");
+
+    onValue(navigationRef, (snapshot) => {
+      const data = snapshot.val();
+      setNavigation(data);
+    });
+  }, []);
   return (
     <nav className="navigation-bar">
       <ul>
         <li>
-          <a href="#about">Tentang Saya</a>
+          <a href="#about">{navigation.about}</a>
         </li>
         <li>
-          <a href="#experience">Pengalaman</a>
+          <a href="#experience">{navigation.experience}</a>
         </li>
         <li>
-          <a href="#education">Pendidikan</a>
+          <a href="#education">{navigation.education}</a>
         </li>
         <li>
-          <a href="#skills">Keterampilan</a>
+          <a href="#skills">{navigation.skills}</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">{navigation.contact}</a>
         </li>
       </ul>
     </nav>

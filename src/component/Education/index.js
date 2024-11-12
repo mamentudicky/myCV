@@ -37,19 +37,19 @@ const Education = () => {
       <h2 className="section-title">{education.title}</h2>
       <ul>
         <li>
-          <strong>{content1.title}</strong> (2022 - sekarang)
+          <strong>{content1.title}</strong> {content1.year}
           <p>{content1.subTitle}</p>
         </li>
         <li>
-          <strong>{content2.title}</strong> (2019 - 2022)
+          <strong>{content2.title}</strong> {content2.year}
           <p>{content2.subTitle}</p>
         </li>
         <li>
-          <strong>{content3.title}</strong> (2016 - 2019)
+          <strong>{content3.title}</strong> {content3.year}
           <p></p>
         </li>
         <li>
-          <strong>{content4.title}</strong> (2010 - 2016)
+          <strong>{content4.title}</strong> {content4.year}
           <p></p>
         </li>
       </ul>

@@ -33,15 +33,15 @@ const Experience = () => {
       <h2 className="section-title">{experience.title}</h2>
       <ul>
         <li>
-          <strong>{content1.title}</strong> - (2024)
+          <strong>{content1.title}</strong> {experience.year24}
           <p>{content1.subTitle}</p>
         </li>
         <li>
-          <strong>{content2.title}</strong> - (2024)
+          <strong>{content2.title}</strong> {experience.year24}
           <p>{content2.subTitle}</p>
         </li>
         <li>
-          <strong>{content3.title}</strong> - (2024)
+          <strong>{content3.title}</strong> {experience.year24}
           <p>{content2.subTitle}</p>
         </li>
       </ul>
