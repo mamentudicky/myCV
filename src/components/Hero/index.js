@@ -9,29 +9,24 @@ const Hero = () => {
                 className="mt-0 mb-16 reveal-from-bottom"
                 data-reveal-delay={200}
               >
-                Dicky mendellson Mamentu
+                <marquee>Dicky mamentu</marquee>
               </h1>
               <div className="container-xs">
                 <p
                   className="mt-0 mb-32 reveal-from-bottom"
                   data-reveal-delay={400}
                 >
-                  Fakultas Ilmu Komputer
-                <p>
-                  Jurusan Informatika
-                  <p>
-                    Tahun angkatan 2022
-                  </p>
-                </p>
+                  Our landing page template works on all devices, so you only
+                  have to set it up once, and get beautiful results forever.
                 </p>
               </div>
             </div>
             <div
               className="
-                                    hero-figure
-                                    reveal-from-bottom
-                                    illustration-element-01
-                                "
+									hero-figure
+									reveal-from-bottom
+									illustration-element-01
+								"
               data-reveal-value="20px"
               data-reveal-delay={800}
             >
@@ -42,15 +37,7 @@ const Hero = () => {
                 width={896}
                 height={504}
               />
-              <h1>yooo </h1>
             </div>
-            <img
-                className="has-shadow"
-                src="images/hero-image.png"
-                alt="Hero image"
-                width={896}
-                height={504}
-              />
           </div>
         </div>
       </section>
@@ -58,10 +45,10 @@ const Hero = () => {
         <div className="container">
           <div
             className="
-                                clients-inner
-                                section-inner
-                                has-top-divider has-bottom-divider
-                            "
+								clients-inner
+								section-inner
+								has-top-divider has-bottom-divider
+							"
           >
             <ul className="list-reset">
               <li>
@@ -92,9 +79,9 @@ const Hero = () => {
                   <div className="features-tiles-item-header">
                     <div
                       className="
-                                                    features-tiles-item-image
-                                                    mb-16
-                                                "
+													features-tiles-item-image
+													mb-16
+												"
                     >
                       <img
                         src="images/feature-tile-icon-01.svg"
@@ -121,9 +108,9 @@ const Hero = () => {
                   <div className="features-tiles-item-header">
                     <div
                       className="
-                                                    features-tiles-item-image
-                                                    mb-16
-                                                "
+													features-tiles-item-image
+													mb-16
+												"
                     >
                       <img
                         src="images/feature-tile-icon-02.svg"
@@ -150,9 +137,9 @@ const Hero = () => {
                   <div className="features-tiles-item-header">
                     <div
                       className="
-                                                    features-tiles-item-image
-                                                    mb-16
-                                                "
+													features-tiles-item-image
+													mb-16
+												"
                     >
                       <img
                         src="images/feature-tile-icon-03.svg"
@@ -193,31 +180,31 @@ const Hero = () => {
                   <div className="pricing-item-content">
                     <div
                       className="
-                                                    pricing-item-header
-                                                    pb-24
-                                                    mb-24
-                                                "
+													pricing-item-header
+													pb-24
+													mb-24
+												"
                     >
                       <div
                         className="
-                                                        pricing-item-price
-                                                        mb-4
-                                                    "
+														pricing-item-price
+														mb-4
+													"
                       >
                         <span
                           className="
-                                                            pricing-item-price-currency
-                                                            h2
-                                                        "
+															pricing-item-price-currency
+															h2
+														"
                         >
                           $
                         </span>
                         <span
                           className="
-                                                            pricing-item-price-amount
-                                                            h1
-                                                            pricing-switchable
-                                                        "
+															pricing-item-price-amount
+															h1
+															pricing-switchable
+														"
                           data-pricing-monthly={34}
                           data-pricing-yearly={27}
                         >
@@ -226,35 +213,35 @@ const Hero = () => {
                       </div>
                       <div
                         className="
-                                                        text-xs text-color-low
-                                                    "
+														text-xs text-color-low
+													"
                       >
                         Lorem ipsum is a common text
                       </div>
                     </div>
                     <div
                       className="
-                                                    pricing-item-features
-                                                    mb-40
-                                                "
+													pricing-item-features
+													mb-40
+												"
                     >
                       <div
                         className="
-                                                        pricing-item-features-title
-                                                        h6
-                                                        text-xs text-color-high
-                                                        mb-24
-                                                    "
+														pricing-item-features-title
+														h6
+														text-xs text-color-high
+														mb-24
+													"
                       >
                         What’s included
                       </div>
                       <ul
                         className="
-                                                        pricing-item-features-list
-                                                        list-reset
-                                                        text-xs
-                                                        mb-32
-                                                    "
+														pricing-item-features-list
+														list-reset
+														text-xs
+														mb-32
+													"
                       >
                         <li className="is-checked">
                           Excepteur sint occaecat velit
@@ -273,10 +260,10 @@ const Hero = () => {
                   <div className="pricing-item-cta mb-8">
                     <a
                       className="
-                                                    button
-                                                    button-primary
-                                                    button-block
-                                                "
+													button
+													button-primary
+													button-block
+												"
                       href="#"
                     >
                       Start free trial
@@ -292,31 +279,31 @@ const Hero = () => {
                   <div className="pricing-item-content">
                     <div
                       className="
-                                                    pricing-item-header
-                                                    pb-24
-                                                    mb-24
-                                                "
+													pricing-item-header
+													pb-24
+													mb-24
+												"
                     >
                       <div
                         className="
-                                                        pricing-item-price
-                                                        mb-4
-                                                    "
+														pricing-item-price
+														mb-4
+													"
                       >
                         <span
                           className="
-                                                            pricing-item-price-currency
-                                                            h2
-                                                        "
+															pricing-item-price-currency
+															h2
+														"
                         >
                           $
                         </span>
                         <span
                           className="
-                                                            pricing-item-price-amount
-                                                            h1
-                                                            pricing-switchable
-                                                        "
+															pricing-item-price-amount
+															h1
+															pricing-switchable
+														"
                           data-pricing-monthly={54}
                           data-pricing-yearly={47}
                         >
@@ -325,35 +312,35 @@ const Hero = () => {
                       </div>
                       <div
                         className="
-                                                        text-xs text-color-low
-                                                    "
+														text-xs text-color-low
+													"
                       >
                         Lorem ipsum is a common text
                       </div>
                     </div>
                     <div
                       className="
-                                                    pricing-item-features
-                                                    mb-40
-                                                "
+													pricing-item-features
+													mb-40
+												"
                     >
                       <div
                         className="
-                                                        pricing-item-features-title
-                                                        h6
-                                                        text-xs text-color-high
-                                                        mb-24
-                                                    "
+														pricing-item-features-title
+														h6
+														text-xs text-color-high
+														mb-24
+													"
                       >
                         What’s included
                       </div>
                       <ul
                         className="
-                                                        pricing-item-features-list
-                                                        list-reset
-                                                        text-xs
-                                                        mb-32
-                                                    "
+														pricing-item-features-list
+														list-reset
+														text-xs
+														mb-32
+													"
                       >
                         <li className="is-checked">
                           Excepteur sint occaecat velit
@@ -374,10 +361,10 @@ const Hero = () => {
                   <div className="pricing-item-cta mb-8">
                     <a
                       className="
-                                                    button
-                                                    button-primary
-                                                    button-block
-                                                "
+													button
+													button-primary
+													button-block
+												"
                       href="#"
                     >
                       Start free trial
@@ -393,31 +380,31 @@ const Hero = () => {
                   <div className="pricing-item-content">
                     <div
                       className="
-                                                    pricing-item-header
-                                                    pb-24
-                                                    mb-24
-                                                "
+													pricing-item-header
+													pb-24
+													mb-24
+												"
                     >
                       <div
                         className="
-                                                        pricing-item-price
-                                                        mb-4
-                                                    "
+														pricing-item-price
+														mb-4
+													"
                       >
                         <span
                           className="
-                                                            pricing-item-price-currency
-                                                            h2
-                                                        "
+															pricing-item-price-currency
+															h2
+														"
                         >
                           $
                         </span>
                         <span
                           className="
-                                                            pricing-item-price-amount
-                                                            h1
-                                                            pricing-switchable
-                                                        "
+															pricing-item-price-amount
+															h1
+															pricing-switchable
+														"
                           data-pricing-monthly={74}
                           data-pricing-yearly={67}
                         >
@@ -426,35 +413,35 @@ const Hero = () => {
                       </div>
                       <div
                         className="
-                                                        text-xs text-color-low
-                                                    "
+														text-xs text-color-low
+													"
                       >
                         Lorem ipsum is a common text
                       </div>
                     </div>
                     <div
                       className="
-                                                    pricing-item-features
-                                                    mb-40
-                                                "
+													pricing-item-features
+													mb-40
+												"
                     >
                       <div
                         className="
-                                                        pricing-item-features-title
-                                                        h6
-                                                        text-xs text-color-high
-                                                        mb-24
-                                                    "
+														pricing-item-features-title
+														h6
+														text-xs text-color-high
+														mb-24
+													"
                       >
                         What’s included
                       </div>
                       <ul
                         className="
-                                                        pricing-item-features-list
-                                                        list-reset
-                                                        text-xs
-                                                        mb-32
-                                                    "
+														pricing-item-features-list
+														list-reset
+														text-xs
+														mb-32
+													"
                       >
                         <li className="is-checked">
                           Excepteur sint occaecat velit
@@ -477,10 +464,10 @@ const Hero = () => {
                   <div className="pricing-item-cta mb-8">
                     <a
                       className="
-                                                    button
-                                                    button-primary
-                                                    button-block
-                                                "
+													button
+													button-primary
+													button-block
+												"
                       href="#"
                     >
                       Start free trial

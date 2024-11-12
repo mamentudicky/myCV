@@ -23,26 +23,59 @@ const World = () => {
           </button>
           <nav id="header-nav" className="header-nav">
             <div className="header-nav-inner">
-              <ul className="list-reset text-xxs header-nav-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Showcase</a></li>
-              </ul>
-              <ul className="list-reset header-nav-right">
-                <li>
-                  <a
-                    className="button button-primary button-wide-mobile button-sm"
-                    href="#"
-                  >
-                    Sign up
-                  </a>
-                </li>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Contact</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
+
+      <style>
+        {`
+          ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+          }
+
+          li {
+            display: inline-block;
+          }
+
+          a {
+            position: relative;
+            text-decoration: none;
+            color: black;
+            padding-bottom: 5px;
+            font-weight: bold;
+            display: inline-block;
+          }
+
+          /* Efek garis bawah saat hover */
+          a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            transform: scaleX(0);
+            transform-origin: up;
+            transition: transform 0.4s ease;
+          }
+
+          a:hover::after {
+            transform: scaleX(1);
+            transform-origin: up;
+          }
+        `}
+      </style>
     </header>
   );
 };
