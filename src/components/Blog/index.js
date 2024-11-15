@@ -18,7 +18,7 @@ const Blog = () => {
             <div className="position-relative mb-4">
               <img
                 className="img-fluid rounded w-100"
-                src="assets/img/blog-1.jpg"
+                src="img/blog-1.jpg"
                 alt
               />
               <div className="blog-date">
@@ -31,7 +31,7 @@ const Blog = () => {
             <div className="position-relative mb-4">
               <img
                 className="img-fluid rounded w-100"
-                src="assets/img/blog-2.jpg"
+                src="img/blog-2.jpg"
                 alt
               />
               <div className="blog-date">
@@ -44,7 +44,7 @@ const Blog = () => {
             <div className="position-relative mb-4">
               <img
                 className="img-fluid rounded w-100"
-                src="assets/img/blog-3.jpg"
+                src="img/blog-3.jpg"
                 alt
               />
               <div className="blog-date">

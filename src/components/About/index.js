@@ -15,11 +15,7 @@ const About = () => {
         </div>
         <div className="row align-items-center">
           <div className="col-lg-5 pb-4 pb-lg-0">
-            <img
-              className="img-fluid rounded w-100"
-              src="assets/img/joss2.jpg"
-              alt
-            />
+            <img className="img-fluid rounded w-100" src="img/joss2.jpg" alt />
           </div>
           <div className="col-lg-7">
             <h3 className="mb-4">UI/UX Designer &amp; Web Developer</h3>

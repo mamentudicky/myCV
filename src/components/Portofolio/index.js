@@ -48,11 +48,11 @@ const Portfolio = () => {
             <div className="position-relative overflow-hidden mb-2">
               <img
                 className="img-fluid rounded w-100"
-                src="assets/img/portfolio-1.jpg"
+                src="img/portfolio-1.jpg"
                 alt
               />
               <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href="assets/img/portfolio-1.jpg" data-lightbox="portfolio">
+                <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
                   <i
                     className="fa fa-plus text-white"
                     style={{ fontSize: 60 }}
@@ -65,11 +65,11 @@ const Portfolio = () => {
             <div className="position-relative overflow-hidden mb-2">
               <img
                 className="img-fluid rounded w-100"
-                src="assets/img/portfolio-2.jpg"
+                src="img/portfolio-2.jpg"
                 alt
               />
               <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href="assets/img/portfolio-2.jpg" data-lightbox="portfolio">
+                <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
                   <i
                     className="fa fa-plus text-white"
                     style={{ fontSize: 60 }}
@@ -82,11 +82,11 @@ const Portfolio = () => {
             <div className="position-relative overflow-hidden mb-2">
               <img
                 className="img-fluid rounded w-100"
-                src="assets/img/portfolio-3.jpg"
+                src="img/portfolio-3.jpg"
                 alt
               />
               <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href="assets/img/portfolio-3.jpg" data-lightbox="portfolio">
+                <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
                   <i
                     className="fa fa-plus text-white"
                     style={{ fontSize: 60 }}
@@ -99,11 +99,11 @@ const Portfolio = () => {
             <div className="position-relative overflow-hidden mb-2">
               <img
                 className="img-fluid rounded w-100"
-                src="assets/img/portfolio-4.jpg"
+                src="img/portfolio-4.jpg"
                 alt
               />
               <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href="assets/img/portfolio-4.jpg" data-lightbox="portfolio">
+                <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
                   <i
                     className="fa fa-plus text-white"
                     style={{ fontSize: 60 }}
@@ -116,11 +116,11 @@ const Portfolio = () => {
             <div className="position-relative overflow-hidden mb-2">
               <img
                 className="img-fluid rounded w-100"
-                src="assets/img/portfolio-5.jpg"
+                src="img/portfolio-5.jpg"
                 alt
               />
               <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href="assets/img/portfolio-5.jpg" data-lightbox="portfolio">
+                <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
                   <i
                     className="fa fa-plus text-white"
                     style={{ fontSize: 60 }}
@@ -133,11 +133,11 @@ const Portfolio = () => {
             <div className="position-relative overflow-hidden mb-2">
               <img
                 className="img-fluid rounded w-100"
-                src="assets/img/portfolio-6.jpg"
+                src="img/portfolio-6.jpg"
                 alt
               />
               <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href="assets/img/portfolio-6.jpg" data-lightbox="portfolio">
+                <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
                   <i
                     className="fa fa-plus text-white"
                     style={{ fontSize: 60 }}

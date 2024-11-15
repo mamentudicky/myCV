@@ -73,47 +73,20 @@ const Qualification = () => {
                   style={{ top: 2, left: "-32px" }}
                 />
                 <h5 className="font-weight-bold mb-1">Web Designer</h5>
-                <p className="mb-2">
-                  <strong>Soft Company</strong> | <small>2000 - 2050</small>
-                </p>
-                <p>
-                  Tempor eos dolore amet tempor dolor tempor. Dolore ea magna
-                  sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem
-                  kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet
-                  lorem diam
-                </p>
               </div>
               <div className="position-relative mb-4">
                 <i
                   className="far fa-dot-circle text-primary position-absolute"
                   style={{ top: 2, left: "-32px" }}
                 />
-                <h5 className="font-weight-bold mb-1">Web Designer</h5>
-                <p className="mb-2">
-                  <strong>Soft Company</strong> | <small>2000 - 2050</small>
-                </p>
-                <p>
-                  Tempor eos dolore amet tempor dolor tempor. Dolore ea magna
-                  sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem
-                  kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet
-                  lorem diam
-                </p>
+                <h5 className="font-weight-bold mb-1">Front End</h5>
               </div>
               <div className="position-relative mb-4">
                 <i
                   className="far fa-dot-circle text-primary position-absolute"
                   style={{ top: 2, left: "-32px" }}
                 />
-                <h5 className="font-weight-bold mb-1">Web Designer</h5>
-                <p className="mb-2">
-                  <strong>Soft Company</strong> | <small>2000 - 2050</small>
-                </p>
-                <p>
-                  Tempor eos dolore amet tempor dolor tempor. Dolore ea magna
-                  sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem
-                  kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet
-                  lorem diam
-                </p>
+                <h5 className="font-weight-bold mb-1">programmer</h5>
               </div>
             </div>
           </div>

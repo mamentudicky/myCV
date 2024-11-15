@@ -10,7 +10,7 @@ const Header = () => {
           <div className="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
             <img
               className="img-fluid w-100 rounded-circle shadow-sm"
-              src="assets/img/joss.jpg"
+              src="img/joss.jpg"
               alt
             />
           </div>
