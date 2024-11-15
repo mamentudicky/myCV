@@ -1,4 +1,6 @@
-const World = () => {
+import React from 'react';
+
+const Header = () => {
   return (
     <header className="site-header reveal-from-bottom">
       <div className="container">
@@ -6,7 +8,8 @@ const World = () => {
           <div className="brand">
             <h1 className="m-0">
               <a href="index.html">
-                <img src="images/logo.svg" alt="Cube" width={32} height={32} />
+                 <h1>D</h1>
+              
               </a>
             </h1>
           </div>
@@ -26,8 +29,8 @@ const World = () => {
               <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Books</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#"></a></li>
               </ul>
             </div>
           </nav>
@@ -80,4 +83,4 @@ const World = () => {
   );
 };
 
-export default World;
+export default Header;
