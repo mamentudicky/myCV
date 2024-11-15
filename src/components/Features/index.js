@@ -22,10 +22,10 @@ const Features = () => {
                     </div>
                   </div>
                   <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8">Join the system</h4>
+                    <h4 className="mt-0 mb-8">Kelahiran</h4>
                     <p className="m-0 text-sm">
-                      A pseudo-Latin text used in web design, layout, and printing
-                      in place of things to emphasise design.
+                      Tahun 2004
+                      Uuan Dumoga 
                     </p>
                   </div>
                 </div>
@@ -51,10 +51,12 @@ const Features = () => {
                     </div>
                   </div>
                   <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8">Join the system</h4>
+                    <h4 className="mt-0 mb-8">Riwayat Pendidikan</h4>
                     <p className="m-0 text-sm">
-                      A pseudo-Latin text used in web design, layout, and printing
-                      in place of things to emphasise design.
+                      SD
+                      SMP
+                      SMA
+                      sementara 1
                     </p>
                   </div>
                 </div>
@@ -80,10 +82,9 @@ const Features = () => {
                     </div>
                   </div>
                   <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8">Join the system</h4>
+                    <h4 className="mt-0 mb-8">Status</h4>
                     <p className="m-0 text-sm">
-                      A pseudo-Latin text used in web design, layout, and printing
-                      in place of things to emphasise design.
+                      Punya enjie
                     </p>
                   </div>
                 </div>

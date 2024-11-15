@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+/* Gaya untuk tombol navigasi */
+.nav-link {
+  color: white;           /* Warna teks putih */
+  text-decoration: none;   /* Menghapus garis bawah default */
+  padding-bottom: 5px;     /* Memberikan sedikit ruang di bawah teks */
+  transition: all 0.3s;    /* Menambahkan transisi halus */
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid white; /* Garis bawah putih saat di-hover */
+}
