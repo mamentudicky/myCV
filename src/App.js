@@ -12,7 +12,7 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div>
@@ -34,6 +34,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

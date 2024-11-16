@@ -1,4 +1,19 @@
+import React, { useState, useEffect } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
+
 const About = () => {
+  const [imageBase64, setImageBase64] = useState("");
+
+  useEffect(() => {
+    const database = getDatabase();
+    const imageRef = ref(database, "image/joss2"); // Path langsung ke "joss2"
+
+    onValue(imageRef, (snapshot) => {
+      const data = snapshot.val();
+      setImageBase64(data || ""); // Simpan data base64 langsung ke state
+    });
+  }, []);
+
   return (
     <div className="container-fluid py-5" id="about">
       <div className="container">
@@ -15,15 +30,23 @@ const About = () => {
         </div>
         <div className="row align-items-center">
           <div className="col-lg-5 pb-4 pb-lg-0">
-            <img className="img-fluid rounded w-100" src="img/joss2.jpg" alt />
+            {imageBase64 ? (
+              <img
+                className="img-fluid rounded w-100"
+                src={`data:image/jpeg;base64,${imageBase64}`}
+                alt="Joshua Busdan profile picture"
+              />
+            ) : (
+              <div>Loading image...</div>
+            )}
           </div>
           <div className="col-lg-7">
             <h3 className="mb-4">UI/UX Designer &amp; Web Developer</h3>
             <p>
               Saya adalah seorang Mahasiswa Teknik Informatika, saya senang
-              dalam bidang Web Design, FrontEnd, dan Aplikasi Development. saya
+              dalam bidang Web Design, FrontEnd, dan Aplikasi Development. Saya
               adalah seorang yang pekerja keras, ramah, dan orang yang tepat
-              waktu. Cita-cita saya adalah ingin menjadi seorang programmer
+              waktu. Cita-cita saya adalah ingin menjadi seorang programmer.
             </p>
             <div className="row mb-3">
               <div className="col-sm-6 py-2">
@@ -44,7 +67,7 @@ const About = () => {
               </div>
               <div className="col-sm-6 py-2">
                 <h6>
-                  Experience: <span className="text-secondary">1 Years</span>
+                  Experience: <span className="text-secondary">1 Year</span>
                 </h6>
               </div>
               <div className="col-sm-6 py-2">
@@ -72,10 +95,18 @@ const About = () => {
                 </h6>
               </div>
             </div>
-            <a href className="btn btn-outline-primary mr-4">
+            <a
+              href="#contact"
+              className="btn btn-outline-primary mr-4"
+              role="button"
+            >
               Hire Me
             </a>
-            <a href className="btn btn-outline-primary">
+            <a
+              href="#portfolio"
+              className="btn btn-outline-primary"
+              role="button"
+            >
               Learn More
             </a>
           </div>
