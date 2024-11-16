@@ -6,11 +6,11 @@ const About = () => {
 
   useEffect(() => {
     const database = getDatabase();
-    const imageRef = ref(database, "image/joss2"); // Path langsung ke "joss2"
+    const imageRef = ref(database, "image/joss2");
 
     onValue(imageRef, (snapshot) => {
       const data = snapshot.val();
-      setImageBase64(data || ""); // Simpan data base64 langsung ke state
+      setImageBase64(data || "");
     });
   }, []);
 
