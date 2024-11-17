@@ -6,7 +6,7 @@ const About = () => {
 
   useEffect(() => {
     const database = getDatabase();
-    const imageRef = ref(database, "image/joss2");
+    const imageRef = ref(database, "image/image1");
 
     onValue(imageRef, (snapshot) => {
       const data = snapshot.val();
@@ -51,13 +51,13 @@ const About = () => {
             <div className="row mb-3">
               <div className="col-sm-6 py-2">
                 <h6>
-                  Name: <span className="text-secondary">Joshua Busdan</span>
+                  Name: <span className="text-secondary">Dicky Mamentu</span>
                 </h6>
               </div>
               <div className="col-sm-6 py-2">
                 <h6>
                   Birthday:{" "}
-                  <span className="text-secondary">21 Januari 2005</span>
+                  <span className="text-secondary">10 maret 2004</span>
                 </h6>
               </div>
               <div className="col-sm-6 py-2">
@@ -72,14 +72,14 @@ const About = () => {
               </div>
               <div className="col-sm-6 py-2">
                 <h6>
-                  Phone: <span className="text-secondary">085157464670</span>
+                  Phone: <span className="text-secondary">085254617988 bisa juga 081543330656</span>
                 </h6>
               </div>
               <div className="col-sm-6 py-2">
                 <h6>
                   Email:{" "}
                   <span className="text-secondary">
-                    revildobusdan@gmail.com
+                    mamentudicky@gmail.com
                   </span>
                 </h6>
               </div>

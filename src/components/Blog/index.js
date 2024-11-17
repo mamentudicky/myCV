@@ -1,62 +1,40 @@
-const Blog = () => {
+const Skill = () => {
+  const skills = [
+    { name: "HTML", level: 95, color: "bg-primary" },
+    { name: "CSS", level: 85, color: "bg-warning" },
+    { name: "PHP", level: 90, color: "bg-danger" },
+    { name: "Javascript", level: 90, color: "bg-danger" },
+    { name: "Angular JS", level: 95, color: "bg-dark" },
+    { name: "Wordpress", level: 85, color: "bg-info" },
+  ];
+
   return (
-    <div className="container-fluid pt-5" id="blog">
+    <div className="container-fluid py-5" id="skill">
       <div className="container">
-        <div className="position-relative d-flex align-items-center justify-content-center">
-          <h1
-            className="display-1 text-uppercase text-white"
-            style={{ WebkitTextStroke: "1px #dee2e6" }}
-          >
-            Blog
-          </h1>
-          <h1 className="position-absolute text-uppercase text-primary">
-            Latest Blog
-          </h1>
-        </div>
+        <h1 className="text-center text-primary mb-4">My Skills</h1>
         <div className="row">
-          <div className="col-lg-4 mb-5">
-            <div className="position-relative mb-4">
-              <img
-                className="img-fluid rounded w-100"
-                src="img/blog-1.jpg"
-                alt
-              />
-              <div className="blog-date">
-                <h4 className="font-weight-bold mb-n1">01</h4>
-                <small className="text-white text-uppercase">Jan</small>
+          {skills.map((skill, index) => (
+            <div key={index} className="col-md-6 mb-4">
+              <div className="d-flex justify-content-between">
+                <h6 className="font-weight-bold">{skill.name}</h6>
+                <h6 className="font-weight-bold">{skill.level}%</h6>
+              </div>
+              <div className="progress">
+                <div
+                  className={`progress-bar ${skill.color}`}
+                  role="progressbar"
+                  aria-valuenow={skill.level}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{ width: `${skill.level}%` }}
+                />
               </div>
             </div>
-          </div>
-          <div className="col-lg-4 mb-5">
-            <div className="position-relative mb-4">
-              <img
-                className="img-fluid rounded w-100"
-                src="img/blog-2.jpg"
-                alt
-              />
-              <div className="blog-date">
-                <h4 className="font-weight-bold mb-n1">01</h4>
-                <small className="text-white text-uppercase">Jan</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 mb-5">
-            <div className="position-relative mb-4">
-              <img
-                className="img-fluid rounded w-100"
-                src="img/blog-3.jpg"
-                alt
-              />
-              <div className="blog-date">
-                <h4 className="font-weight-bold mb-n1">01</h4>
-                <small className="text-white text-uppercase">Jan</small>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default Blog;
+export default Skill;

@@ -1,95 +1,46 @@
 const Qualification = () => {
   return (
-    <div className="container-fluid py-5" id="qualification">
-      <div className="container">
-        <div className="position-relative d-flex align-items-center justify-content-center">
-          <h1
-            className="display-1 text-uppercase text-white"
-            style={{ WebkitTextStroke: "1px #dee2e6" }}
-          >
-            Quality
-          </h1>
-          <h1 className="position-absolute text-uppercase text-primary">
-            Education &amp; Expericence
-          </h1>
+    <div id="qualification" className="container py-5">
+      <h1 className="text-center text-uppercase text-white" style={{ WebkitTextStroke: "1px #dee2e6" }}>
+        Quality
+      </h1>
+      <h2 className="text-center text-primary">Education &amp; Experience</h2>
+
+      <div className="row">
+        <div className="col-lg-6">
+          <h3 className="mb-4">My Education</h3>
+          <ul className="list-unstyled">
+            <li className="mb-4">
+              <h5>SMP</h5>
+              <p><strong>SMP Advent Timika</strong> | 2016 - 2019</p>
+              <p>Saya melanjutkan ke SMP setelah menyelesaikan sekolah dasar.</p>
+            </li>
+            <li className="mb-4">
+              <h5>SMA</h5>
+              <p><strong>SMA Advent Timika</strong> | 2020 - 2022</p>
+              <p>Saya melanjutkan sekolah di Papua Barat.</p>
+            </li>
+            <li className="mb-4">
+              <h5>Perguruan Tinggi</h5>
+              <p><strong>Universitas Klabat</strong> | 2022 - Sekarang</p>
+              <p>Saya melanjutkan kuliah di Teknik Informatika.</p>
+            </li>
+          </ul>
         </div>
-        <div className="row align-items-center">
-          <div className="col-lg-6">
-            <h3 className="mb-4">My Education</h3>
-            <div className="border-left border-primary pt-2 pl-4 ml-2">
-              <div className="position-relative mb-4">
-                <i
-                  className="far fa-dot-circle text-primary position-absolute"
-                  style={{ top: 2, left: "-32px" }}
-                />
-                <h5 className="font-weight-bold mb-1">SMP</h5>
-                <p className="mb-2">
-                  <strong>SMP NEGERI 1 TATAPAAN</strong> |{" "}
-                  <small>2016 - 2019</small>
-                </p>
-                <p>
-                  Setelah menyelesaikan sekolah dasar, saya melanjutkan di
-                  jenjang sekolah menengah pertama
-                </p>
-              </div>
-              <div className="position-relative mb-4">
-                <i
-                  className="far fa-dot-circle text-primary position-absolute"
-                  style={{ top: 2, left: "-32px" }}
-                />
-                <h5 className="font-weight-bold mb-1">SMA</h5>
-                <p className="mb-2">
-                  <strong>SMA KRISTEN MAKARIOS</strong> |{" "}
-                  <small>2020 - 2022</small>
-                </p>
-                <p>
-                  Saya melanjutkan bersekolah di SMA MAKARIOS yang berada di
-                  Jakarta Barat
-                </p>
-              </div>
-              <div className="position-relative mb-4">
-                <i
-                  className="far fa-dot-circle text-primary position-absolute"
-                  style={{ top: 2, left: "-32px" }}
-                />
-                <h5 className="font-weight-bold mb-1">Perguruan Tinggi</h5>
-                <p className="mb-2">
-                  <strong>Universitas Klabat</strong> |{" "}
-                  <small>2022 - Sekarang</small>
-                </p>
-                <p>
-                  Setelah menyelesaikan persekolahan saya melanjutkan di dunia
-                  perkuliahan sebagai mahasiswa Teknik Informatika
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <h3 className="mb-4">My Expericence</h3>
-            <div className="border-left border-primary pt-2 pl-4 ml-2">
-              <div className="position-relative mb-4">
-                <i
-                  className="far fa-dot-circle text-primary position-absolute"
-                  style={{ top: 2, left: "-32px" }}
-                />
-                <h5 className="font-weight-bold mb-1">Web Designer</h5>
-              </div>
-              <div className="position-relative mb-4">
-                <i
-                  className="far fa-dot-circle text-primary position-absolute"
-                  style={{ top: 2, left: "-32px" }}
-                />
-                <h5 className="font-weight-bold mb-1">Front End</h5>
-              </div>
-              <div className="position-relative mb-4">
-                <i
-                  className="far fa-dot-circle text-primary position-absolute"
-                  style={{ top: 2, left: "-32px" }}
-                />
-                <h5 className="font-weight-bold mb-1">programmer</h5>
-              </div>
-            </div>
-          </div>
+
+        <div className="col-lg-6">
+          <h3 className="mb-4">My Experience</h3>
+          <ul className="list-unstyled">
+            <li className="mb-4">
+              <h5>Web Designer</h5>
+            </li>
+            <li className="mb-4">
+              <h5>Front End Developer</h5>
+            </li>
+            <li className="mb-4">
+              <h5>Programmer</h5>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

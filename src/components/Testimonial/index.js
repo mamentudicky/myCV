@@ -1,52 +1,27 @@
 const Testimonial = () => {
+  const testimonials = [
+    { name: "Client 1", image: "img/testimonial-1.jpg", profession: "Developer" },
+    { name: "Client 2", image: "img/testimonial-2.jpg", profession: "Designer" },
+    { name: "Client 3", image: "img/testimonial-3.jpg", profession: "Manager" }
+  ];
+
   return (
-    <div className="container-fluid py-5" id="testimonial">
-      <div className="container">
-        <div className="position-relative d-flex align-items-center justify-content-center">
-          <h1
-            className="display-1 text-uppercase text-white"
-            style={{ WebkitTextStroke: "1px #dee2e6" }}
-          >
-            Review
-          </h1>
-          <h1 className="position-absolute text-uppercase text-primary">
-            Clients Say
-          </h1>
-        </div>
-        <div className="row justify-content-center">
-          <div className="col-lg-8">
-            <div className="owl-carousel testimonial-carousel">
-              <div className="text-center">
-                <i className="fa fa-3x fa-quote-left text-primary mb-4" />
-                <img
-                  className="img-fluid rounded-circle mx-auto mb-3"
-                  src="img/testimonial-1.jpg"
-                  style={{ width: 80, height: 80 }}
-                />
-                <h5 className="font-weight-bold m-0">Client Name</h5>
-              </div>
-              <div className="text-center">
-                <i className="fa fa-3x fa-quote-left text-primary mb-4" />
-                <img
-                  className="img-fluid rounded-circle mx-auto mb-3"
-                  src="img/testimonial-2.jpg"
-                  style={{ width: 80, height: 80 }}
-                />
-                <h5 className="font-weight-bold m-0">Client Name</h5>
-              </div>
-              <div className="text-center">
-                <i className="fa fa-3x fa-quote-left text-primary mb-4" />
-                <img
-                  className="img-fluid rounded-circle mx-auto mb-3"
-                  src="img/testimonial-3.jpg"
-                  style={{ width: 80, height: 80 }}
-                />
-                <h5 className="font-weight-bold m-0">Client Name</h5>
-                <span>Profession</span>
-              </div>
-            </div>
+    <div className="container py-5" id="testimonial">
+      <h1 className="text-center text-uppercase text-primary mb-5">Clients Say</h1>
+      <div className="row justify-content-center">
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className="col-lg-4 text-center mb-4">
+            <i className="fa fa-3x fa-quote-left text-primary mb-3" />
+            <img
+              className="img-fluid rounded-circle mx-auto mb-3"
+              src={testimonial.image}
+              alt={`Testimonial from ${testimonial.name}`}
+              style={{ width: 80, height: 80 }}
+            />
+            <h5 className="font-weight-bold">{testimonial.name}</h5>
+            <span>{testimonial.profession}</span>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

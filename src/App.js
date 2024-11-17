@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Qualification from "./components/Qualification";
 import Skill from "./components/Skill";
-import Services from "./components/Services";
 import Portfolio from "./components/Portofolio";
 import Testimonial from "./components/Testimonial";
 import Blog from "./components/Blog";
@@ -20,8 +19,6 @@ const App = () => {
         <About />
         <Qualification />
         <Skill />
-        <Services />
-        <Portfolio />
         <Testimonial />
         <Blog />
         <Contact />

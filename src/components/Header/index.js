@@ -32,22 +32,19 @@ const Header = () => {
             {imageBase64 ? (
               <img
                 className="img-fluid w-100 rounded-circle shadow-sm"
-                src={`data:image/jpeg;base64,${imageBase64}`}
+                src={`data:image/jpeg;,${imageBase64}`}
                 alt="Image from Firebase"
               />
             ) : (
-              <div className="text-white">Loading image...</div>
+              <div className="text-white">Loading image..</div>
             )}
           </div>
           <div className="col-lg-7 text-center text-lg-left">
-            <h3 className="text-white font-weight-normal mb-3">
-              Hello Guys I'm
-            </h3>
-            <h1
-              className="display-3 text-uppercase text-primary mb-2"
-              style={{ WebkitTextStroke: "2px #ffffff" }}
-            >
-              Joshua Busdan
+            <h4 className="text-white font-weight-normal mb-3">
+            
+            </h4>
+            <h1>
+              Dicky mamentu
             </h1>
             <h1 className="typed-text-output d-inline font-weight-lighter text-white" />
             <div className="typed-text d-none">
