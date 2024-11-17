@@ -8,6 +8,7 @@ import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: "AIzaSyAjvjh8soYV6OwsXYgftQ_l7evgQbIv5YM",
   authDomain: "cvdicky-d58a5.firebaseapp.com",
+  databaseURL: "https://cvdicky-d58a5-default-rtdb.firebaseio.com",
   projectId: "cvdicky-d58a5",
   storageBucket: "cvdicky-d58a5.firebasestorage.app",
   messagingSenderId: "825567819270",
