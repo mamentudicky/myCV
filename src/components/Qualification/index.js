@@ -1,6 +1,6 @@
 const Qualification = () => {
   return (
-    <div id="qualification" className="container py-5">
+    <div id="qualification" className="container py-5" style={{ direction: "ltr", textAlign: "left" }}>
       <h1 className="text-center text-uppercase text-white" style={{ WebkitTextStroke: "1px #dee2e6" }}>
         Quality
       </h1>

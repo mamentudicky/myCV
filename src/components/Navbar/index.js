@@ -25,20 +25,8 @@ const Navbar = () => {
           <a href="#qualification" className="nav-item nav-link">
             Quality
           </a>
-          <a href="#skill" className="nav-item nav-link">
-            Skill
-          </a>
-          <a href="#service" className="nav-item nav-link">
-            Service
-          </a>
-          <a href="#portfolio" className="nav-item nav-link">
-            Portfolio
-          </a>
           <a href="#testimonial" className="nav-item nav-link">
             Review
-          </a>
-          <a href="#blog" className="nav-item nav-link">
-            Blog
           </a>
           <a href="#contact" className="nav-item nav-link">
             Contact

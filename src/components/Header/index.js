@@ -44,7 +44,8 @@ const Header = () => {
             
             </h4>
             <h1>
-              Dicky mamentu
+              DICKY MENDELLSON MAMENTU
+
             </h1>
             <h1 className="typed-text-output d-inline font-weight-lighter text-white" />
             <div className="typed-text d-none">

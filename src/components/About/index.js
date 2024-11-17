@@ -15,7 +15,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="container-fluid py-5" id="about">
+    <div className="container-fluid py-5" id="about" style={{ direction: "ltr", textAlign: "left" }}>
       <div className="container">
         <div className="position-relative d-flex align-items-center justify-content-center">
           <h1
@@ -25,16 +25,16 @@ const About = () => {
             About
           </h1>
           <h1 className="position-absolute text-uppercase text-primary">
-            About Me
+            Me
           </h1>
         </div>
         <div className="row align-items-center">
-          <div className="col-lg-5 pb-4 pb-lg-0">
+          <div className="col-lg-5 pb-4 pb-lg-0 d-flex justify-content-center">
             {imageBase64 ? (
               <img
                 className="img-fluid rounded w-100"
                 src={`data:image/jpeg;base64,${imageBase64}`}
-                alt="Joshua Busdan profile picture"
+                alt="Dicky Mamentu profile picture"
               />
             ) : (
               <div>Loading image...</div>

@@ -18,9 +18,7 @@ const App = () => {
         <Header />
         <About />
         <Qualification />
-        <Skill />
         <Testimonial />
-        <Blog />
         <Contact />
         <Footer />
         <i className="fa fa-2x fa-angle-down text-white scroll-to-bottom" />
