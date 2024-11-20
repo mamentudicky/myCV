@@ -26,7 +26,7 @@ const Footer = () => {
           <ul className="contact-list">
             <li>
               <a
-                href="tel:+6281234567890"
+                href="tel:+6281543330656"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -39,7 +39,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://instagram.com/dknz._"
+                href="https://instagram.com/mamentudikyy_"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -52,7 +52,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/Lapzy7"
+                href="https://github.com/mamentudikyy"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -65,7 +65,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://facebook.com/share/14Lr4WYsCx"
+                href="https://www.facebook.com/share/qez4cPh9njEg1W6L/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
