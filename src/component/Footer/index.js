@@ -39,7 +39,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://instagram.com/mamentudikyy_"
+                href="https://instagram.com/mamentudkyy_"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -52,7 +52,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/mamentudikyy"
+                href="https://github.com/mamentudicky"
                 target="_blank"
                 rel="noopener noreferrer"
               >
