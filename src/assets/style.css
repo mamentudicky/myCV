@@ -14,7 +14,7 @@
 }
 
 .navigation-bar {
-  background-color: #1b80e4;
+  background-color: #09131e;
   width: 100%;
   padding: 10px;
   display: flex;
@@ -88,7 +88,7 @@ html {
 }
 
 .cv-header {
-  background-color: #1e90ff;
+  background-color: #2c0037;
   color: #ffffff;
   padding: 20px 30px;
   display: flex;
@@ -138,7 +138,7 @@ html {
 }
 
 .footer {
-  background-color: #1e90ff;
+  background-color: #2f0037;
   color: #ffffff;
   padding: 20px 0;
   border-radius: 3%;
